@@ -1,6 +1,7 @@
-# SIMx20
-An event-driven digital SIMx1 simulator in C++. Circuits are built from primitive gate objects (AND/OR/XOR/NOT), wired together, and evaluated — the same model used inside RTL simulators.
+# SIMx1
+An event-driven digital SIMx1 simulator in C++. Circuits are built from primitive gate objects (AND/OR/XOR/NOT), wired together, and evaluated and it is the same model used inside RTL simulators.
 Demonstrated with a 4-bit ripple-carry adder built entirely from gate primitives (no `+` operator involved).
+Future additions for gui and mux-demux to be added.
 
 ## Build
 
