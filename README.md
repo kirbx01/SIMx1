@@ -1,6 +1,5 @@
-#SIMx20
+# SIMx20
 An event-driven digital SIMx1 simulator in C++. Circuits are built from primitive gate objects (AND/OR/XOR/NOT), wired together, and evaluated — the same model used inside RTL simulators.
-
 Demonstrated with a 4-bit ripple-carry adder built entirely from gate primitives (no `+` operator involved).
 
 ## Build
@@ -20,8 +19,8 @@ make
 
 ## Structure
 
-- `include/wire.hpp`, `src/wire.cpp` — signal-carrying wire (0/1)
-- `include/gate.hpp`, `src/gate.cpp` — Gate base class + AND/OR/XOR/NOT
-- `include/circuit.hpp`, `src/circuit.cpp` — netlist container, evaluates gates in insertion order
-- `src/main.cpp` — builds a 4-bit ripple-carry adder from full adders
-- `tests/testbench.cpp` — self-checking testbench, 100% input coverage
+- `include/wire.hpp`, `src/wire.cpp` signal-carrying wire (0/1)
+- `include/gate.hpp`, `src/gate.cpp` Gate base class + AND/OR/XOR/NOT
+- `include/circuit.hpp`, `src/circuit.cpp` netlist container, evaluates gates in insertion order
+- `src/main.cpp` builds a 4-bit ripple-carry adder from full adders
+- `tests/testbench.cpp` self-checking testbench, 100% input coverage
