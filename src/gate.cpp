@@ -26,3 +26,25 @@ void XorGate::evaluate() {
 void NotGate::evaluate() {
     output_->setValue(!inputs_[0]->value());
 }
+
+void NandGate::evaluate() {
+    int result = 1;
+    for (Wire* w : inputs_) result &= w->value();
+    output_->setValue(!result);
+}
+
+void NorGate::evaluate() {
+    int result = 0;
+    for (Wire* w : inputs_) result |= w->value();
+    output_->setValue(!result);
+}
+
+void XnorGate::evaluate() {
+    int result = 0;
+    for (Wire* w : inputs_) result ^= w->value();
+    output_->setValue(!result);
+}
+
+void BufferGate::evaluate() {
+    output_->setValue(inputs_[0]->value());
+}

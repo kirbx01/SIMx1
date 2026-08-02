@@ -40,3 +40,27 @@ public:
     using Gate::Gate;
     void evaluate() override;
 };
+
+class NandGate : public Gate {
+public:
+    using Gate::Gate;
+    void evaluate() override;
+};
+
+class NorGate : public Gate {
+public:
+    using Gate::Gate;
+    void evaluate() override;
+};
+
+class XnorGate : public Gate {
+public:
+    using Gate::Gate;
+    void evaluate() override;
+};
+
+class BufferGate : public Gate {
+public:
+    using Gate::Gate;
+    void evaluate() override;
+};
