@@ -21,7 +21,7 @@ public:
 
     Wire* wire(const std::string& name);
 
-private:n
+private:
     std::vector<std::unique_ptr<Wire>> wires_;
     std::unordered_map<std::string, Wire*> wireIndex_;
     std::vector<std::unique_ptr<Gate>> gates_;
